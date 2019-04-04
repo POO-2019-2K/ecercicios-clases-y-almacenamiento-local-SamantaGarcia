@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cuenta bancaria</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <link rel="stylesheet" href="schedule.css">
+    <link rel="stylesheet" href="interfaz.css">
+</head>
+<body>
+        <div class="jumbotron">
+                <h1 class="display-4">Bank Accounts</h1>
+                <p class="lead">Schedule of all the user's movements</p>
+            </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12" id="form">
+                        <form action="">
+                                <div class="form-group">
+                                    <label for="name">Name:</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Alexa">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Last Name:</label>
+                                    <input type="text" class="form-control" id="lName" placeholder="Rubio">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Account:</label>
+                                    <input type="text" class="form-control" id="account" placeholder="123493">
+                                </div>
+                                <br>
+                                <select id="select" class="form-control" style="width: 285px;">
+                                        <option>Seleccione el tipo de movimiento</option>
+                                        <option value="1">Deposito</option>
+                                        <option value="2">Retiro</option>
+                                      </select>
+                                      <br>
+                                      <div class="form-group">
+                                        <label for="name">Quantity:</label>
+                                        <input type="text" class="form-control" id="quantity" placeholder="$">
+                                    </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-outline-primary" id="btn1">Move</button>
+                                </div>
+                            </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <table class="table" id="info">
+                        <thead>
+                            <th>Indicador</th>
+                            <th>Valor</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>bank deposits</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                    <td>Total bank deposits</td>
+                                    <td></td>
+                            </tr>
+                            <tr>
+                                    <td>Bank withdrawal</td>
+                                    <td></td>
+                            </tr>
+                            <tr>
+                                    <td>Total bank withdrawal</td>
+                                    <td></td>
+                            </tr>
+                            <tr>
+                                    <td>Bank movements</td>
+                                    <td></td>
+                            </tr>
+                            <tr>
+                                    <td>Total balance</td>
+                                    <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <table class="table" id="list">
+                        <thead>
+                            <th>Name</th>
+                            <th>Last name</th>
+                            <th>Account</th>
+                            <th>Movement</th>
+                            <th>Quantity</th>
+                            <th>Balance</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+</body>
+<script src="main.js" type="module"></script>
+</html>
