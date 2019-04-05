@@ -21,7 +21,8 @@ class Main{
                
                 let students = new Student(objStudent);
                 let found = -1;
-                students.forEach((e, index) => {
+
+                list.forEach((e, index) => {
                     if (e.account === account) {
                       found = index;
                      
@@ -61,8 +62,6 @@ class Main{
             }
             
         });
-        
-              
         
     }
    
